@@ -46,20 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Formularios\Compuestos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formularios\Compuestos.Designer.cs">
+      <DependentUpon>Compuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Constantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Constantes.Designer.cs">
+      <DependentUpon>Constantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Principal.Designer.cs">
+      <DependentUpon>Formulario_Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Compuestos.resx">
+      <DependentUpon>Compuestos.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> a4df316b77b09dfc7023ff8ed74b9ce83197b74f
+    <EmbeddedResource Include="Formularios\Constantes.resx">
+      <DependentUpon>Constantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Principal.resx">
+      <DependentUpon>Formulario_Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
