@@ -14,7 +14,7 @@ namespace ClasesINA.Formularios
     {
         string[] sexo = { "Hombre", "Mujer", "Otro" };
 
-        string[] marcaCarro = new string[100];
+        string[] marcaCarro = new string[4];
         int contadorMarcasAgregadas = 0;
 
         public Compuestos()
@@ -50,6 +50,58 @@ namespace ClasesINA.Formularios
             NameMarca.Text = "";
 
 
+        }
+
+        private void CantidadVehiculo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ASC_Click(object sender, EventArgs e)
+        {
+            Array.Sort(marcaCarro);
+            Console.WriteLine(string.Join(", ", marcaCarro));
+        }
+
+        private void DESC_Click(object sender, EventArgs e)
+        {
+            Array.Reverse(marcaCarro);
+            Console.WriteLine(string.Join (", ", marcaCarro));
+        }
+
+        private void Ver_Click(object sender, EventArgs e)
+        {
+            Marcas.Items.Clear();  
+            Marcas.Items.AddRange(marcaCarro);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string marcaBuscar = txtBuscaM.Text;
+
+            if (string.IsNullOrEmpty(marcaBuscar))
+            {
+                MessageBox.Show("Debes ingresar una marca para buscar");
+
+            }
+            else
+            {
+                bool existe = Array.Exists(marcaCarro,x => x == marcaBuscar);
+                if (existe)
+                {
+                    MessageBox.Show($"La marca {marcaBuscar} si existe");
+                }
+                else
+                {
+                    MessageBox.Show($"La marca {marcaBuscar} NO existe");
+                }
+
+            }
         }
     }
 }

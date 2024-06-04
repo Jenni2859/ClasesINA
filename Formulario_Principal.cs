@@ -32,5 +32,11 @@ namespace ClasesINA
             Compuestos VC = new Compuestos();
             VC.Show();
         }
+
+        private void AbreCompuestos_Click_1(object sender, EventArgs e)
+        {
+            Compuestos VC = new Compuestos();
+            VC.Show();
+        }
     }
 }

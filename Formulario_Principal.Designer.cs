@@ -36,9 +36,9 @@
             // 
             this.AbreConstantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AbreConstantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.AbreConstantes.Location = new System.Drawing.Point(164, 83);
+            this.AbreConstantes.Location = new System.Drawing.Point(261, 37);
             this.AbreConstantes.Name = "AbreConstantes";
-            this.AbreConstantes.Size = new System.Drawing.Size(162, 53);
+            this.AbreConstantes.Size = new System.Drawing.Size(267, 136);
             this.AbreConstantes.TabIndex = 0;
             this.AbreConstantes.Text = "Constantes";
             this.AbreConstantes.UseVisualStyleBackColor = false;
@@ -49,13 +49,13 @@
             this.AbreCompuestos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AbreCompuestos.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AbreCompuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.AbreCompuestos.Location = new System.Drawing.Point(383, 85);
+            this.AbreCompuestos.Location = new System.Drawing.Point(261, 212);
             this.AbreCompuestos.Name = "AbreCompuestos";
-            this.AbreCompuestos.Size = new System.Drawing.Size(284, 49);
+            this.AbreCompuestos.Size = new System.Drawing.Size(267, 139);
             this.AbreCompuestos.TabIndex = 1;
             this.AbreCompuestos.Text = "Valores Compuestos";
             this.AbreCompuestos.UseVisualStyleBackColor = false;
-            this.AbreCompuestos.Click += new System.EventHandler(this.AbreCompuestos_Click);
+            this.AbreCompuestos.Click += new System.EventHandler(this.AbreCompuestos_Click_1);
             // 
             // Formulario_Principal
             // 
