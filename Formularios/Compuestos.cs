@@ -14,6 +14,9 @@ namespace ClasesINA.Formularios
     {
         string[] sexo = { "Hombre", "Mujer", "Otro" };
 
+        string[] marcaCarro = new string[100];
+        int contadorMarcasAgregadas = 0;
+
         public Compuestos()
         {
             InitializeComponent();
@@ -31,6 +34,22 @@ namespace ClasesINA.Formularios
         {
             CBsexo.Items.Clear();
             CBsexo.Items.AddRange(sexo);
+            CBsexo.Items.Add("Otro elemento manual");
+        }
+
+        private void RegistrarV_Click(object sender, EventArgs e)
+        {
+            string marcaAgregar = NameMarca.Text;
+
+            marcaCarro[contadorMarcasAgregadas] = marcaAgregar;
+
+            contadorMarcasAgregadas += 1;
+
+            CantidadVehiculo.Text = ""+ contadorMarcasAgregadas;
+
+            NameMarca.Text = "";
+
+
         }
     }
 }
