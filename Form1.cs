@@ -16,10 +16,13 @@ namespace ClasesINA
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void button1_Click(object sender, EventArgs e)
         {
             //ESTO ES UN COMENTARIO
         }
+=======
+>>>>>>> a4df316b77b09dfc7023ff8ed74b9ce83197b74f
     }
 }
