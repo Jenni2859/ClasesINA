@@ -30,15 +30,16 @@
         {
             this.AbreConstantes = new System.Windows.Forms.Button();
             this.AbreCompuestos = new System.Windows.Forms.Button();
+            this.Abre_EstrControl = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AbreConstantes
             // 
             this.AbreConstantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AbreConstantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.AbreConstantes.Location = new System.Drawing.Point(261, 37);
+            this.AbreConstantes.Location = new System.Drawing.Point(41, 24);
             this.AbreConstantes.Name = "AbreConstantes";
-            this.AbreConstantes.Size = new System.Drawing.Size(267, 136);
+            this.AbreConstantes.Size = new System.Drawing.Size(204, 116);
             this.AbreConstantes.TabIndex = 0;
             this.AbreConstantes.Text = "Constantes";
             this.AbreConstantes.UseVisualStyleBackColor = false;
@@ -49,19 +50,32 @@
             this.AbreCompuestos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AbreCompuestos.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AbreCompuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.AbreCompuestos.Location = new System.Drawing.Point(261, 212);
+            this.AbreCompuestos.Location = new System.Drawing.Point(266, 24);
             this.AbreCompuestos.Name = "AbreCompuestos";
-            this.AbreCompuestos.Size = new System.Drawing.Size(267, 139);
+            this.AbreCompuestos.Size = new System.Drawing.Size(252, 116);
             this.AbreCompuestos.TabIndex = 1;
             this.AbreCompuestos.Text = "Valores Compuestos";
             this.AbreCompuestos.UseVisualStyleBackColor = false;
             this.AbreCompuestos.Click += new System.EventHandler(this.AbreCompuestos_Click_1);
+            // 
+            // Abre_EstrControl
+            // 
+            this.Abre_EstrControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Abre_EstrControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
+            this.Abre_EstrControl.Location = new System.Drawing.Point(537, 24);
+            this.Abre_EstrControl.Name = "Abre_EstrControl";
+            this.Abre_EstrControl.Size = new System.Drawing.Size(211, 116);
+            this.Abre_EstrControl.TabIndex = 2;
+            this.Abre_EstrControl.Text = "Estructura de Control";
+            this.Abre_EstrControl.UseVisualStyleBackColor = false;
+            this.Abre_EstrControl.Click += new System.EventHandler(this.Abre_EstrControl_Click);
             // 
             // Formulario_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Abre_EstrControl);
             this.Controls.Add(this.AbreCompuestos);
             this.Controls.Add(this.AbreConstantes);
             this.Name = "Formulario_Principal";
@@ -74,5 +88,6 @@
 
         private System.Windows.Forms.Button AbreConstantes;
         private System.Windows.Forms.Button AbreCompuestos;
+        private System.Windows.Forms.Button Abre_EstrControl;
     }
 }

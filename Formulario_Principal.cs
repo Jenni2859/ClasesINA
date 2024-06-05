@@ -38,5 +38,12 @@ namespace ClasesINA
             Compuestos VC = new Compuestos();
             VC.Show();
         }
+
+        private void Abre_EstrControl_Click(object sender, EventArgs e)
+        {
+            EstructuraDeControles EC = new EstructuraDeControles();
+            EC.Show();
+            
+        }
     }
 }

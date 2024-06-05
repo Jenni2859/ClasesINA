@@ -1,0 +1,118 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ClasesINA.Formularios
+{
+    public partial class EstructuraDeControles : Form
+    {
+        String[] diasSemana = { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes" };
+        public EstructuraDeControles()
+        {
+            InitializeComponent();
+        }
+
+        private void buttonIF_Click(object sender, EventArgs e)
+        {
+            int x = 100;
+            if (x > 50)
+            {
+                MessageBox.Show($" {x} sí es mayor que 50");
+            }
+            else
+            {
+                MessageBox.Show($" {x} NO es mayor que 50");
+            }
+        }
+
+        private void buttonSwitch_Click(object sender, EventArgs e)
+        {
+            int opcionUsuario = 1;
+            switch (opcionUsuario)
+            {
+                case 1:
+                    Console.WriteLine("Es uno");
+                    break;
+                case 2:
+                    Console.WriteLine("Es dos");
+                    break;
+                default:
+                    Console.WriteLine("No es ni uno o dos");
+                    break;
+
+            }
+        }
+
+        private void buttonFor_Click(object sender, EventArgs e)
+        {
+            /*
+            for (int i = 0; i < 10; i++) 
+            {
+                Console.WriteLine($"Vamos por: {i}");
+            
+            }
+            */
+            int[] numero = { 1, 2, 3, 4, 6, 77, 456, 345, 123 };
+            foreach (int i in numero)
+            {
+                Console.WriteLine($"{i}");
+            }
+
+            string[] palabra = { "Hola", "como", "estas" };
+            /*foreach (string x in palabra)
+            {
+                Console.WriteLine(x);
+            }
+            */
+
+            // otra manera de hacer el de arriba
+            for (int i = 0; i < palabra.Length -1; i+=2)
+            {
+                Console.WriteLine(palabra[i]);
+            }
+            
+            // otra manera de estructura FOR
+            //for (int i = 0; i < palabra.Length -1; Console.WriteLine(palabra[i+=2])) ;
+
+        }
+
+        private void EstructuraDeControles_Load(object sender, EventArgs e)
+        {
+            
+            dtDias.Rows.Clear(); //limpia las filas que tiene el objeto
+
+            foreach (string dias in diasSemana)
+            {
+                dtDias.Rows.Add(dias); //agrega la fila al objeto
+            }
+        }
+
+        private void Guardar_Click(object sender, EventArgs e)
+        {
+            string DiaAdd = txtAdd.Text;
+
+            bool exist = Array.Exists(diasSemana, x => x == DiaAdd);
+
+            if (string.IsNullOrEmpty(DiaAdd)) // validad si esta vacio
+            {
+                MessageBox.Show("Debes ingresar un día para guardar");
+
+            }
+            else if (exist) // en caso que ya existe el dia
+            {
+                MessageBox.Show($"El día {DiaAdd} ya existe en la lista");
+            }
+            else
+            {
+                diasSemana[diasSemana.Length - 1] = DiaAdd;
+                dtDias.Rows.Add(DiaAdd);
+            }
+        }
+    }
+}
