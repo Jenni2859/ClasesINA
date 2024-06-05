@@ -84,7 +84,6 @@ namespace ClasesINA.Formularios
 
         private void EstructuraDeControles_Load(object sender, EventArgs e)
         {
-            
             dtDias.Rows.Clear(); //limpia las filas que tiene el objeto
 
             foreach (string dias in diasSemana)
@@ -110,8 +109,11 @@ namespace ClasesINA.Formularios
             }
             else
             {
-                diasSemana[diasSemana.Length - 1] = DiaAdd;
+                //Array.Resize(ref diasSemana, diasSemana.Length +1);
+                diasSemana[diasSemana.Length -1] = DiaAdd;
                 dtDias.Rows.Add(DiaAdd);
+                
+
             }
         }
     }
