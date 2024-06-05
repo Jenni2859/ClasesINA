@@ -40,6 +40,8 @@
             this.txtAdd = new System.Windows.Forms.TextBox();
             this.Guardar = new System.Windows.Forms.Button();
             this.Eliminar = new System.Windows.Forms.Button();
+            this.buscaDia = new System.Windows.Forms.TextBox();
+            this.Buscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtDias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,7 +114,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtDias.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtDias.Location = new System.Drawing.Point(376, 70);
+            this.dtDias.Location = new System.Drawing.Point(376, 62);
             this.dtDias.Name = "dtDias";
             this.dtDias.ReadOnly = true;
             this.dtDias.Size = new System.Drawing.Size(394, 163);
@@ -128,7 +130,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label2.Location = new System.Drawing.Point(375, 35);
+            this.label2.Location = new System.Drawing.Point(375, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 22);
             this.label2.TabIndex = 5;
@@ -137,7 +139,7 @@
             // txtAdd
             // 
             this.txtAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtAdd.Location = new System.Drawing.Point(500, 35);
+            this.txtAdd.Location = new System.Drawing.Point(500, 27);
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(186, 26);
             this.txtAdd.TabIndex = 6;
@@ -145,7 +147,7 @@
             // Guardar
             // 
             this.Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.Guardar.Location = new System.Drawing.Point(694, 33);
+            this.Guardar.Location = new System.Drawing.Point(694, 25);
             this.Guardar.Name = "Guardar";
             this.Guardar.Size = new System.Drawing.Size(75, 31);
             this.Guardar.TabIndex = 7;
@@ -156,7 +158,7 @@
             // Eliminar
             // 
             this.Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Eliminar.Location = new System.Drawing.Point(659, 239);
+            this.Eliminar.Location = new System.Drawing.Point(659, 231);
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.Size = new System.Drawing.Size(110, 28);
             this.Eliminar.TabIndex = 8;
@@ -164,11 +166,33 @@
             this.Eliminar.UseVisualStyleBackColor = true;
             this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
+            // buscaDia
+            // 
+            this.buscaDia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buscaDia.Location = new System.Drawing.Point(376, 230);
+            this.buscaDia.Name = "buscaDia";
+            this.buscaDia.Size = new System.Drawing.Size(151, 26);
+            this.buscaDia.TabIndex = 9;
+            this.buscaDia.TextChanged += new System.EventHandler(this.buscaDia_TextChanged);
+            // 
+            // Buscar
+            // 
+            this.Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Buscar.Location = new System.Drawing.Point(533, 231);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(91, 29);
+            this.Buscar.TabIndex = 10;
+            this.Buscar.Text = "Buscar Día";
+            this.Buscar.UseVisualStyleBackColor = true;
+            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
+            // 
             // EstructuraDeControles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Buscar);
+            this.Controls.Add(this.buscaDia);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.Guardar);
             this.Controls.Add(this.txtAdd);
@@ -199,5 +223,7 @@
         private System.Windows.Forms.TextBox txtAdd;
         private System.Windows.Forms.Button Guardar;
         private System.Windows.Forms.Button Eliminar;
+        private System.Windows.Forms.TextBox buscaDia;
+        private System.Windows.Forms.Button Buscar;
     }
 }
