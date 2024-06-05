@@ -186,36 +186,10 @@ namespace ClasesINA.Formularios
             }
         }
 
-        private void Restaura_Click(object sender, EventArgs e)
+        private void Restaurar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void buscaDia_TextChanged(object sender, EventArgs e)
-        {
-            string BuscarD = buscaDia.Text;
-
-
-            if (string.IsNullOrEmpty(BuscarD))
-            {
-                MessageBox.Show("Debes ingresar un día para buscar");
-
-            }
-            else
-            {
-                bool existe = Array.Exists(diasSemana, x => x == BuscarD);
-                if (existe)
-                {
-                    dtDias.Rows.Clear();
-                    dtDias.Rows.Add(BuscarD);
-
-                }
-                else
-                {
-                    MessageBox.Show($"El día {BuscarD} NO existe");
-                }
-            }
-
+            dtDias.Rows.Clear();
+            dtDias.Rows.Add(diasSemana);
         }
     }
 }

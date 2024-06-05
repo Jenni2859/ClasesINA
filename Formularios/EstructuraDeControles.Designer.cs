@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonIF = new System.Windows.Forms.Button();
             this.buttonSwitch = new System.Windows.Forms.Button();
@@ -42,6 +42,7 @@
             this.Eliminar = new System.Windows.Forms.Button();
             this.buscaDia = new System.Windows.Forms.TextBox();
             this.Buscar = new System.Windows.Forms.Button();
+            this.Restaurar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtDias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,25 +96,25 @@
             // 
             this.dtDias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtDias.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtDias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtDias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtDias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtDias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Dias});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtDias.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtDias.DefaultCellStyle = dataGridViewCellStyle4;
             this.dtDias.Location = new System.Drawing.Point(376, 62);
             this.dtDias.Name = "dtDias";
             this.dtDias.ReadOnly = true;
@@ -173,7 +174,6 @@
             this.buscaDia.Name = "buscaDia";
             this.buscaDia.Size = new System.Drawing.Size(151, 26);
             this.buscaDia.TabIndex = 9;
-            this.buscaDia.TextChanged += new System.EventHandler(this.buscaDia_TextChanged);
             // 
             // Buscar
             // 
@@ -186,11 +186,23 @@
             this.Buscar.UseVisualStyleBackColor = true;
             this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
             // 
+            // Restaurar
+            // 
+            this.Restaurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Restaurar.Location = new System.Drawing.Point(376, 266);
+            this.Restaurar.Name = "Restaurar";
+            this.Restaurar.Size = new System.Drawing.Size(394, 28);
+            this.Restaurar.TabIndex = 11;
+            this.Restaurar.Text = "Restaurar Lista";
+            this.Restaurar.UseVisualStyleBackColor = true;
+            this.Restaurar.Click += new System.EventHandler(this.Restaurar_Click);
+            // 
             // EstructuraDeControles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Restaurar);
             this.Controls.Add(this.Buscar);
             this.Controls.Add(this.buscaDia);
             this.Controls.Add(this.Eliminar);
@@ -225,5 +237,6 @@
         private System.Windows.Forms.Button Eliminar;
         private System.Windows.Forms.TextBox buscaDia;
         private System.Windows.Forms.Button Buscar;
+        private System.Windows.Forms.Button Restaurar;
     }
 }
