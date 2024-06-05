@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtAdd = new System.Windows.Forms.TextBox();
             this.Guardar = new System.Windows.Forms.Button();
+            this.Eliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtDias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,6 +114,7 @@
             this.dtDias.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtDias.Location = new System.Drawing.Point(376, 70);
             this.dtDias.Name = "dtDias";
+            this.dtDias.ReadOnly = true;
             this.dtDias.Size = new System.Drawing.Size(394, 163);
             this.dtDias.TabIndex = 4;
             // 
@@ -120,6 +122,7 @@
             // 
             this.Dias.HeaderText = "Dias de la semana";
             this.Dias.Name = "Dias";
+            this.Dias.ReadOnly = true;
             // 
             // label2
             // 
@@ -150,11 +153,23 @@
             this.Guardar.UseVisualStyleBackColor = true;
             this.Guardar.Click += new System.EventHandler(this.Guardar_Click);
             // 
+            // Eliminar
+            // 
+            this.Eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Eliminar.Location = new System.Drawing.Point(659, 239);
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.Size = new System.Drawing.Size(110, 28);
+            this.Eliminar.TabIndex = 8;
+            this.Eliminar.Text = "Eliminar Día";
+            this.Eliminar.UseVisualStyleBackColor = true;
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
+            // 
             // EstructuraDeControles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.Guardar);
             this.Controls.Add(this.txtAdd);
             this.Controls.Add(this.label2);
@@ -183,5 +198,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAdd;
         private System.Windows.Forms.Button Guardar;
+        private System.Windows.Forms.Button Eliminar;
     }
 }

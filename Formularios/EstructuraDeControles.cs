@@ -72,11 +72,11 @@ namespace ClasesINA.Formularios
             */
 
             // otra manera de hacer el de arriba
-            for (int i = 0; i < palabra.Length -1; i+=2)
+            for (int i = 0; i < palabra.Length - 1; i += 2)
             {
                 Console.WriteLine(palabra[i]);
             }
-            
+
             // otra manera de estructura FOR
             //for (int i = 0; i < palabra.Length -1; Console.WriteLine(palabra[i+=2])) ;
 
@@ -96,7 +96,7 @@ namespace ClasesINA.Formularios
         {
             string DiaAdd = txtAdd.Text;
 
-            bool exist = Array.Exists(diasSemana, x => x == DiaAdd);
+            bool exist = Array.Exists(diasSemana, x => x.ToUpper() == DiaAdd.ToUpper());
 
             if (string.IsNullOrEmpty(DiaAdd)) // validad si esta vacio
             {
@@ -109,11 +109,53 @@ namespace ClasesINA.Formularios
             }
             else
             {
-                //Array.Resize(ref diasSemana, diasSemana.Length +1);
-                diasSemana[diasSemana.Length -1] = DiaAdd;
+                Array.Resize(ref diasSemana, diasSemana.Length + 1);
+                diasSemana[diasSemana.Length - 1] = DiaAdd;
                 dtDias.Rows.Add(DiaAdd);
-                
 
+
+            }
+        }
+
+        private void Eliminar_Click(object sender, EventArgs e)
+        {
+
+
+            if (dtDias.SelectedCells[0] != null)
+            {
+                string diaXborrar = (string)dtDias.SelectedCells[0].Value;
+                DialogResult opcionUsuario = MessageBox.Show($"Desea eliminar el dia {dtDias.SelectedCells[0].Value}?",
+                "Advertencia", MessageBoxButtons.YesNo);
+                switch (opcionUsuario)
+                {
+                    case DialogResult.Yes:
+
+
+                        if (Array.Exists(diasSemana, dia => dia == diaXborrar))
+                        {
+                            int index = Array.IndexOf(diasSemana, diaXborrar); Console.WriteLine(index);
+                            if (index != -1)
+                            {
+                                for (int i = index; i < diasSemana.Length - 1; i++)
+                                {
+
+                                    diasSemana[i] = diasSemana[i + 1];
+
+                                }
+                                Array.Resize(ref diasSemana, diasSemana.Length - 1);
+                            }
+                        }
+
+                        dtDias.Rows.Clear();
+                        foreach (var item in diasSemana)
+                        {
+
+                            dtDias.Rows.Add(item);
+                        }
+                        break;
+                    case DialogResult.No:
+                        break;
+                }
             }
         }
     }
