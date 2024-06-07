@@ -14,6 +14,10 @@ namespace ClasesINA.Formularios
 {
     public partial class Login : MaterialForm
     {
+        public static String[] usuario = { "Jeni" };
+        public static String[] contrasennia = { "123" };
+
+
         public Login()
         {
             InitializeComponent();
@@ -40,6 +44,14 @@ namespace ClasesINA.Formularios
             CreaCuentas NewCuenta = new CreaCuentas();
             NewCuenta.Show();
             
+        }
+
+        private void Login_Activated(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty (CreaCuentas.usuario1))
+            {
+                txtUsuario.Text = CreaCuentas.usuario1;
+            }
         }
     }
 }

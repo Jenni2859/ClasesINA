@@ -30,7 +30,7 @@
         {
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialMultiLineTextBox21 = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
+            this.txtUsuario = new MaterialSkin.Controls.MaterialMultiLineTextBox2();
             this.materialMaskedTextBox1 = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -44,7 +44,7 @@
             this.materialCard1.Controls.Add(this.linkLabel1);
             this.materialCard1.Controls.Add(this.materialButton1);
             this.materialCard1.Controls.Add(this.materialMaskedTextBox1);
-            this.materialCard1.Controls.Add(this.materialMultiLineTextBox21);
+            this.materialCard1.Controls.Add(this.txtUsuario);
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -69,32 +69,32 @@
             this.materialLabel1.TabIndex = 1;
             this.materialLabel1.Text = "Usuario";
             // 
-            // materialMultiLineTextBox21
+            // txtUsuario
             // 
-            this.materialMultiLineTextBox21.AnimateReadOnly = false;
-            this.materialMultiLineTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialMultiLineTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialMultiLineTextBox21.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.materialMultiLineTextBox21.Depth = 0;
-            this.materialMultiLineTextBox21.HideSelection = true;
-            this.materialMultiLineTextBox21.Hint = "Ingrese su usuario";
-            this.materialMultiLineTextBox21.Location = new System.Drawing.Point(131, 17);
-            this.materialMultiLineTextBox21.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.materialMultiLineTextBox21.MaxLength = 32767;
-            this.materialMultiLineTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialMultiLineTextBox21.Name = "materialMultiLineTextBox21";
-            this.materialMultiLineTextBox21.PasswordChar = '\0';
-            this.materialMultiLineTextBox21.ReadOnly = false;
-            this.materialMultiLineTextBox21.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.materialMultiLineTextBox21.SelectedText = "";
-            this.materialMultiLineTextBox21.SelectionLength = 0;
-            this.materialMultiLineTextBox21.SelectionStart = 0;
-            this.materialMultiLineTextBox21.ShortcutsEnabled = true;
-            this.materialMultiLineTextBox21.Size = new System.Drawing.Size(240, 46);
-            this.materialMultiLineTextBox21.TabIndex = 2;
-            this.materialMultiLineTextBox21.TabStop = false;
-            this.materialMultiLineTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialMultiLineTextBox21.UseSystemPasswordChar = false;
+            this.txtUsuario.AnimateReadOnly = false;
+            this.txtUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsuario.Depth = 0;
+            this.txtUsuario.HideSelection = true;
+            this.txtUsuario.Hint = "Ingrese su usuario";
+            this.txtUsuario.Location = new System.Drawing.Point(131, 17);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtUsuario.MaxLength = 32767;
+            this.txtUsuario.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.PasswordChar = '\0';
+            this.txtUsuario.ReadOnly = false;
+            this.txtUsuario.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtUsuario.SelectedText = "";
+            this.txtUsuario.SelectionLength = 0;
+            this.txtUsuario.SelectionStart = 0;
+            this.txtUsuario.ShortcutsEnabled = true;
+            this.txtUsuario.Size = new System.Drawing.Size(240, 46);
+            this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.TabStop = false;
+            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUsuario.UseSystemPasswordChar = false;
             // 
             // materialMaskedTextBox1
             // 
@@ -190,6 +190,7 @@
             this.Name = "Login";
             this.Padding = new System.Windows.Forms.Padding(2, 64, 2, 3);
             this.Text = "Login";
+            this.Activated += new System.EventHandler(this.Login_Activated);
             this.Load += new System.EventHandler(this.Login_Load);
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
@@ -203,9 +204,9 @@
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialMaskedTextBox materialMaskedTextBox1;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox2 materialMultiLineTextBox21;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label1;
+        public MaterialSkin.Controls.MaterialMultiLineTextBox2 txtUsuario;
     }
 }
