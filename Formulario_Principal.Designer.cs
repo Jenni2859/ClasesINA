@@ -37,7 +37,7 @@
             // 
             this.AbreConstantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AbreConstantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.AbreConstantes.Location = new System.Drawing.Point(41, 24);
+            this.AbreConstantes.Location = new System.Drawing.Point(39, 110);
             this.AbreConstantes.Name = "AbreConstantes";
             this.AbreConstantes.Size = new System.Drawing.Size(204, 116);
             this.AbreConstantes.TabIndex = 0;
@@ -50,7 +50,7 @@
             this.AbreCompuestos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.AbreCompuestos.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.AbreCompuestos.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.AbreCompuestos.Location = new System.Drawing.Point(266, 24);
+            this.AbreCompuestos.Location = new System.Drawing.Point(268, 110);
             this.AbreCompuestos.Name = "AbreCompuestos";
             this.AbreCompuestos.Size = new System.Drawing.Size(252, 116);
             this.AbreCompuestos.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             this.Abre_EstrControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Abre_EstrControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
-            this.Abre_EstrControl.Location = new System.Drawing.Point(537, 24);
+            this.Abre_EstrControl.Location = new System.Drawing.Point(539, 110);
             this.Abre_EstrControl.Name = "Abre_EstrControl";
             this.Abre_EstrControl.Size = new System.Drawing.Size(211, 116);
             this.Abre_EstrControl.TabIndex = 2;
@@ -80,6 +80,7 @@
             this.Controls.Add(this.AbreConstantes);
             this.Name = "Formulario_Principal";
             this.Text = "Formulario_Principal";
+            this.Load += new System.EventHandler(this.Formulario_Principal_Load);
             this.ResumeLayout(false);
 
         }

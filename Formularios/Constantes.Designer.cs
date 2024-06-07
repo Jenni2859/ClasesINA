@@ -36,7 +36,7 @@
             // 
             this.lblConstante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblConstante.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblConstante.Location = new System.Drawing.Point(81, 113);
+            this.lblConstante.Location = new System.Drawing.Point(200, 184);
             this.lblConstante.Name = "lblConstante";
             this.lblConstante.Size = new System.Drawing.Size(410, 43);
             this.lblConstante.TabIndex = 0;
@@ -44,9 +44,9 @@
             // 
             // lblValorConstante
             // 
-            this.lblValorConstante.BackColor = System.Drawing.Color.Yellow;
+            this.lblValorConstante.BackColor = System.Drawing.Color.Pink;
             this.lblValorConstante.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblValorConstante.Location = new System.Drawing.Point(81, 51);
+            this.lblValorConstante.Location = new System.Drawing.Point(200, 122);
             this.lblValorConstante.Name = "lblValorConstante";
             this.lblValorConstante.Size = new System.Drawing.Size(410, 59);
             this.lblValorConstante.TabIndex = 1;
@@ -63,6 +63,7 @@
             this.Controls.Add(this.lblConstante);
             this.Name = "Constantes";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Constantes_Load);
             this.ResumeLayout(false);
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClasesINA.Formularios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace ClasesINA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formulario_Principal());
+            Application.Run(new Login());
+
         }
     }
 }

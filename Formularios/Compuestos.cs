@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace ClasesINA.Formularios
 {
-    public partial class Compuestos : Form
+    public partial class Compuestos : MaterialForm
     {
         string[] sexo = { "Hombre", "Mujer", "Otro" };
 
@@ -102,6 +103,11 @@ namespace ClasesINA.Formularios
                 }
 
             }
+        }
+
+        private void Compuestos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
