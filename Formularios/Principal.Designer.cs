@@ -39,6 +39,7 @@
             this.PrecioU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnidadesC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,6 +149,7 @@
             this.TotalPrecio.Size = new System.Drawing.Size(250, 50);
             this.TotalPrecio.TabIndex = 4;
             this.TotalPrecio.TabStop = false;
+            this.TotalPrecio.Text = "0";
             this.TotalPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TotalPrecio.UseSystemPasswordChar = false;
             // 
@@ -185,6 +187,7 @@
             // 
             // Nombre
             // 
+            this.Nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Nombre.HeaderText = "Nombre producto";
             this.Nombre.Name = "Nombre";
             // 
@@ -203,11 +206,32 @@
             this.Total.HeaderText = "Total a pagar";
             this.Total.Name = "Total";
             // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSize = false;
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(783, 378);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(88, 36);
+            this.materialButton1.TabIndex = 8;
+            this.materialButton1.Text = "A";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 544);
+            this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Elimina);
             this.Controls.Add(this.TotalPrecio);
@@ -237,5 +261,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioU;
         private System.Windows.Forms.DataGridViewTextBoxColumn UnidadesC;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }

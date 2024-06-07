@@ -80,11 +80,17 @@
     <Compile Include="Formularios\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario_Principal.cs">
+    <Compile Include="Formularios\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario_Principal.Designer.cs">
-      <DependentUpon>Formulario_Principal.cs</DependentUpon>
+    <Compile Include="Formularios\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_principal.Designer.cs">
+      <DependentUpon>Formulario_principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,8 +109,11 @@
     <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formulario_Principal.resx">
-      <DependentUpon>Formulario_Principal.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_principal.resx">
+      <DependentUpon>Formulario_principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

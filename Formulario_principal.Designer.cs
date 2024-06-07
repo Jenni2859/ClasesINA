@@ -1,6 +1,6 @@
 ﻿namespace ClasesINA
 {
-    partial class inicio
+    partial class Formulario_Principal
     {
         /// <summary>
         /// Required designer variable.

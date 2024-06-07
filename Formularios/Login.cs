@@ -53,5 +53,29 @@ namespace ClasesINA.Formularios
                 txtUsuario.Text = CreaCuentas.usuario1;
             }
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            string usuarioAutentica = txtUsuario.Text;
+            string contrasenniaAutentica = txtContrasennia.Text;
+
+            bool existeUser = Array.Exists(usuario, filtro => filtro == usuarioAutentica);
+            bool existeContra = Array.Exists(contrasennia, filtro => filtro == contrasenniaAutentica);
+
+            if (existeUser && existeContra)
+            {
+                Principal principal = new Principal();
+                principal.Show();
+                Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Usuario y/o contraseña no coinciden",
+                    "Error de acceso",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+
+            }
+        }
     }
 }

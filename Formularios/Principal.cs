@@ -36,7 +36,8 @@ namespace ClasesINA.Formularios
             double precioUnidades = Convert.ToDouble(precio.Text);
             double total = Convert.ToDouble(TotalPrecio.Text);
 
-            if (total <=0 || precioUnidad <=0)
+
+            if (total <=0 || precioUnidades <= 0)
             {
                 MessageBox.Show("Los valores no pueden ser cero");
 
