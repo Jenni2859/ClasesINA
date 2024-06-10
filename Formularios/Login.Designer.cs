@@ -140,7 +140,7 @@
             this.txtUsuario.Depth = 0;
             this.txtUsuario.HideSelection = true;
             this.txtUsuario.Hint = "Ingrese su usuario";
-            this.txtUsuario.Location = new System.Drawing.Point(131, 17);
+            this.txtUsuario.Location = new System.Drawing.Point(132, 17);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtUsuario.MaxLength = 32767;
             this.txtUsuario.MouseState = MaterialSkin.MouseState.OUT;

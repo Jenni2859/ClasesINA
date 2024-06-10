@@ -64,7 +64,7 @@ namespace ClasesINA.Formularios
 
             if (existeUser && existeContra)
             {
-                Principal principal = new Principal();
+                Principal2 principal = new Principal2();
                 principal.Show();
                 Visible = false;
             }

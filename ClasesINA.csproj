@@ -86,6 +86,12 @@
     <Compile Include="Formularios\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Principal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal2.Designer.cs">
+      <DependentUpon>Principal2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal2.resx">
+      <DependentUpon>Principal2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario_principal.resx">
       <DependentUpon>Formulario_principal.cs</DependentUpon>
@@ -147,6 +156,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loupe_217655 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

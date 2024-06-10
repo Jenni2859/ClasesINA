@@ -28,6 +28,37 @@ namespace ClasesINA.Formularios
         {
 
         }
+        private void precio_Leave(object sender, EventArgs e)
+        {
+            if (precio.Text.Length >= 0)
+            {
+                double numero = 0;
+                bool EsNumero = double.TryParse(precio.Text, out numero);
+
+                if (EsNumero)
+                {
+                    int PrecioUnitario = Convert.ToInt32(precio.Text);
+                    int unidadesCompradas = Convert.ToInt32(Unidades.Value);
+                    TotalPrecio.Text = "" + PrecioUnitario * unidadesCompradas;
+                }
+                else
+                {
+                    precio.Focus();
+                    precio.Hint = "Debe de ser un numero";
+                    precio.SelectAll();
+                    precio.BackColor = Color.Red;
+                }
+
+            }
+
+        }
+
+        private void Unidades_onValueChanged(object sender, int newValue)
+        {
+            int PrecioUnitario = Convert.ToInt32(precio.Text);
+            int unidadesCompradas = Convert.ToInt32(Unidades.Value);
+            TotalPrecio.Text = "" + PrecioUnitario * unidadesCompradas;
+        }
 
         private void Compra_Click(object sender, EventArgs e)
         {
@@ -60,18 +91,26 @@ namespace ClasesINA.Formularios
                     precioUnidad[precioUnidad.Length - 1] = precioUnidades;
                     totalpago[totalpago.Length - 1] = total;
 
+                    DetalleCompra.Rows.Add(Producto.Text, Unidades.Value, precio.Text, TotalPrecio.Text);
+
                     Producto.Text = "";
                     Unidades.Value = 0;
                     precio.Text = "";
                     TotalPrecio.Text = "0.0";
 
-                    MessageBox.Show("Compra efectuada con éxito");
-                    Producto.Focus();
+                    //MessageBox.Show("Compra efectuada con éxito");
+                    //Producto.Focus();
+
+                    
 
                 }
             }
 
 
         }
+
+
+
+        
     }
 }

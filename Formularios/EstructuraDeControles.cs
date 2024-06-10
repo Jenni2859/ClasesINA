@@ -192,5 +192,7 @@ namespace ClasesINA.Formularios
             dtDias.Rows.Clear();
             dtDias.Rows.Add(diasSemana);
         }
+
+        
     }
 }
