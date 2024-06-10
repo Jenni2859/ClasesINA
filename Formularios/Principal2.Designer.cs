@@ -68,7 +68,8 @@
             // 
             this.facturarProductosToolStripMenuItem.Image = global::ClasesINA.Properties.Resources.factura;
             this.facturarProductosToolStripMenuItem.Name = "facturarProductosToolStripMenuItem";
-            this.facturarProductosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.facturarProductosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.facturarProductosToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.facturarProductosToolStripMenuItem.Text = "Facturar productos";
             this.facturarProductosToolStripMenuItem.Click += new System.EventHandler(this.facturarProductosToolStripMenuItem_Click);
             // 
@@ -76,8 +77,10 @@
             // 
             this.crearCuentaDeUsuarioToolStripMenuItem.Image = global::ClasesINA.Properties.Resources.usuario;
             this.crearCuentaDeUsuarioToolStripMenuItem.Name = "crearCuentaDeUsuarioToolStripMenuItem";
-            this.crearCuentaDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.crearCuentaDeUsuarioToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.crearCuentaDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.crearCuentaDeUsuarioToolStripMenuItem.Text = "Crear cuenta de usuario";
+            this.crearCuentaDeUsuarioToolStripMenuItem.ToolTipText = "Esta ventana crea una cuenta";
             this.crearCuentaDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.crearCuentaDeUsuarioToolStripMenuItem_Click);
             // 
             // Contenedor

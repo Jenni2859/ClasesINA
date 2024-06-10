@@ -32,7 +32,7 @@ namespace ClasesINA.Formularios
             // indicamos que no es el principal (sino que es secundario)
             facturacion.TopLevel = false;
             facturacion.AutoScroll = true; // permite hacer scroll
-            facturacion.FormBorderStyle = FormBorderStyle.None;
+            //facturacion.FormBorderStyle = FormBorderStyle.None;
             facturacion.Dock = DockStyle.Fill;
 
             Contenedor.Controls.Add(facturacion);
