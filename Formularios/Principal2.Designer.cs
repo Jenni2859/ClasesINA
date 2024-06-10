@@ -30,9 +30,11 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.facturaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearCuentaDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formularioDeListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Contenedor = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -41,10 +43,11 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.facturaciónToolStripMenuItem,
-            this.cuentasToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.cuentasToolStripMenuItem,
+            this.listasToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(3, 64);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(873, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(867, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -56,14 +59,6 @@
             this.facturaciónToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.facturaciónToolStripMenuItem.Text = "Facturación";
             // 
-            // cuentasToolStripMenuItem
-            // 
-            this.cuentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearCuentaDeUsuarioToolStripMenuItem});
-            this.cuentasToolStripMenuItem.Name = "cuentasToolStripMenuItem";
-            this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.cuentasToolStripMenuItem.Text = "Cuentas";
-            // 
             // facturarProductosToolStripMenuItem
             // 
             this.facturarProductosToolStripMenuItem.Image = global::ClasesINA.Properties.Resources.factura;
@@ -71,7 +66,16 @@
             this.facturarProductosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.facturarProductosToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
             this.facturarProductosToolStripMenuItem.Text = "Facturar productos";
+            this.facturarProductosToolStripMenuItem.ToolTipText = "Esta ventana crea una factura";
             this.facturarProductosToolStripMenuItem.Click += new System.EventHandler(this.facturarProductosToolStripMenuItem_Click);
+            // 
+            // cuentasToolStripMenuItem
+            // 
+            this.cuentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearCuentaDeUsuarioToolStripMenuItem});
+            this.cuentasToolStripMenuItem.Name = "cuentasToolStripMenuItem";
+            this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.cuentasToolStripMenuItem.Text = "Cuentas";
             // 
             // crearCuentaDeUsuarioToolStripMenuItem
             // 
@@ -83,13 +87,30 @@
             this.crearCuentaDeUsuarioToolStripMenuItem.ToolTipText = "Esta ventana crea una cuenta";
             this.crearCuentaDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.crearCuentaDeUsuarioToolStripMenuItem_Click);
             // 
+            // listasToolStripMenuItem
+            // 
+            this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formularioDeListasToolStripMenuItem});
+            this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.listasToolStripMenuItem.Text = "Listas";
+            // 
+            // formularioDeListasToolStripMenuItem
+            // 
+            this.formularioDeListasToolStripMenuItem.Image = global::ClasesINA.Properties.Resources.lista_de_verificacion;
+            this.formularioDeListasToolStripMenuItem.Name = "formularioDeListasToolStripMenuItem";
+            this.formularioDeListasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
+            this.formularioDeListasToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.formularioDeListasToolStripMenuItem.Text = "Formulario de listas";
+            this.formularioDeListasToolStripMenuItem.Click += new System.EventHandler(this.formularioDeListasToolStripMenuItem_Click);
+            // 
             // Contenedor
             // 
             this.Contenedor.AutoSize = true;
             this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Contenedor.Location = new System.Drawing.Point(0, 24);
+            this.Contenedor.Location = new System.Drawing.Point(3, 88);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(873, 483);
+            this.Contenedor.Size = new System.Drawing.Size(867, 416);
             this.Contenedor.TabIndex = 1;
             // 
             // Principal2
@@ -118,5 +139,7 @@
         private System.Windows.Forms.ToolStripMenuItem cuentasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearCuentaDeUsuarioToolStripMenuItem;
         private System.Windows.Forms.Panel Contenedor;
+        private System.Windows.Forms.ToolStripMenuItem listasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formularioDeListasToolStripMenuItem;
     }
 }

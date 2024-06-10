@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,8 @@ using System.Windows.Forms;
 
 namespace ClasesINA.Formularios
 {
-    public partial class Principal2 : Form
+    public partial class Principal2 : MaterialForm
+
     {
         public Principal2()
         {
@@ -57,6 +59,24 @@ namespace ClasesINA.Formularios
 
             NewCuenta.Show();
 
+        }
+
+        private void formularioDeListasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Contenedor.Controls.Clear(); //quitamos forms si ya los hay
+
+            // creamos una instancia del formulario a abrir
+            Listas listas = new Listas();
+
+            // indicamos que no es el principal (sino que es secundario)
+            listas.TopLevel = false;
+            listas.AutoScroll = true; // permite hacer scroll
+            listas.FormBorderStyle = FormBorderStyle.None;
+            //NewCuenta.Dock = DockStyle.Fill;
+
+            Contenedor.Controls.Add(listas);
+
+            listas.Show();
         }
     }
 }

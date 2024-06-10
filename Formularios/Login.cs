@@ -67,6 +67,7 @@ namespace ClasesINA.Formularios
                 Principal2 principal = new Principal2();
                 principal.Show();
                 Visible = false;
+
             }
             else
             {

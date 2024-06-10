@@ -74,6 +74,12 @@
     <Compile Include="Formularios\EstructuraDeControles.Designer.cs">
       <DependentUpon>EstructuraDeControles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Listas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas.Designer.cs">
+      <DependentUpon>Listas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\EstructuraDeControles.resx">
       <DependentUpon>EstructuraDeControles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas.resx">
+      <DependentUpon>Listas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -162,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-de-verificacion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
