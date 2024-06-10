@@ -98,6 +98,12 @@
     <Compile Include="Formularios\Principal2.Designer.cs">
       <DependentUpon>Principal2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Principal3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal3.Designer.cs">
+      <DependentUpon>Principal3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Principal2.resx">
       <DependentUpon>Principal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal3.resx">
+      <DependentUpon>Principal3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario_principal.resx">
       <DependentUpon>Formulario_principal.cs</DependentUpon>

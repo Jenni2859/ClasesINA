@@ -30,12 +30,13 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.facturaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.facturarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.crearCuentaDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formularioDeListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Contenedor = new System.Windows.Forms.Panel();
+            this.facturarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crearCuentaDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formularioDeListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facturarConListasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,10 +55,36 @@
             // facturaciónToolStripMenuItem
             // 
             this.facturaciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.facturarProductosToolStripMenuItem});
+            this.facturarProductosToolStripMenuItem,
+            this.facturarConListasToolStripMenuItem});
             this.facturaciónToolStripMenuItem.Name = "facturaciónToolStripMenuItem";
             this.facturaciónToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.facturaciónToolStripMenuItem.Text = "Facturación";
+            // 
+            // cuentasToolStripMenuItem
+            // 
+            this.cuentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.crearCuentaDeUsuarioToolStripMenuItem});
+            this.cuentasToolStripMenuItem.Name = "cuentasToolStripMenuItem";
+            this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.cuentasToolStripMenuItem.Text = "Cuentas";
+            // 
+            // listasToolStripMenuItem
+            // 
+            this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formularioDeListasToolStripMenuItem});
+            this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
+            this.listasToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.listasToolStripMenuItem.Text = "Listas";
+            // 
+            // Contenedor
+            // 
+            this.Contenedor.AutoSize = true;
+            this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Contenedor.Location = new System.Drawing.Point(3, 88);
+            this.Contenedor.Name = "Contenedor";
+            this.Contenedor.Size = new System.Drawing.Size(867, 416);
+            this.Contenedor.TabIndex = 1;
             // 
             // facturarProductosToolStripMenuItem
             // 
@@ -69,14 +96,6 @@
             this.facturarProductosToolStripMenuItem.ToolTipText = "Esta ventana crea una factura";
             this.facturarProductosToolStripMenuItem.Click += new System.EventHandler(this.facturarProductosToolStripMenuItem_Click);
             // 
-            // cuentasToolStripMenuItem
-            // 
-            this.cuentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.crearCuentaDeUsuarioToolStripMenuItem});
-            this.cuentasToolStripMenuItem.Name = "cuentasToolStripMenuItem";
-            this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.cuentasToolStripMenuItem.Text = "Cuentas";
-            // 
             // crearCuentaDeUsuarioToolStripMenuItem
             // 
             this.crearCuentaDeUsuarioToolStripMenuItem.Image = global::ClasesINA.Properties.Resources.usuario;
@@ -87,14 +106,6 @@
             this.crearCuentaDeUsuarioToolStripMenuItem.ToolTipText = "Esta ventana crea una cuenta";
             this.crearCuentaDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.crearCuentaDeUsuarioToolStripMenuItem_Click);
             // 
-            // listasToolStripMenuItem
-            // 
-            this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.formularioDeListasToolStripMenuItem});
-            this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.listasToolStripMenuItem.Text = "Listas";
-            // 
             // formularioDeListasToolStripMenuItem
             // 
             this.formularioDeListasToolStripMenuItem.Image = global::ClasesINA.Properties.Resources.lista_de_verificacion;
@@ -104,14 +115,12 @@
             this.formularioDeListasToolStripMenuItem.Text = "Formulario de listas";
             this.formularioDeListasToolStripMenuItem.Click += new System.EventHandler(this.formularioDeListasToolStripMenuItem_Click);
             // 
-            // Contenedor
+            // facturarConListasToolStripMenuItem
             // 
-            this.Contenedor.AutoSize = true;
-            this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Contenedor.Location = new System.Drawing.Point(3, 88);
-            this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(867, 416);
-            this.Contenedor.TabIndex = 1;
+            this.facturarConListasToolStripMenuItem.Name = "facturarConListasToolStripMenuItem";
+            this.facturarConListasToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
+            this.facturarConListasToolStripMenuItem.Text = "Facturar con listas";
+            this.facturarConListasToolStripMenuItem.Click += new System.EventHandler(this.facturarConListasToolStripMenuItem_Click);
             // 
             // Principal2
             // 
@@ -141,5 +150,6 @@
         private System.Windows.Forms.Panel Contenedor;
         private System.Windows.Forms.ToolStripMenuItem listasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formularioDeListasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem facturarConListasToolStripMenuItem;
     }
 }

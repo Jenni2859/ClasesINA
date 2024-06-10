@@ -98,6 +98,19 @@ namespace ClasesINA.Formularios
             return existe;
         }
 
+        /// <summary>
+        /// Registro un valor nuevo a la lista numerosPredeterminados
+        /// </summary>
+        /// <param name="valorNuevo">Es el nuevo valor a agregar</param>
+        /// <returns></returns>
+        private void AgregarElemento(int valorNuevo)
+        {
+            numerosPredeterminados.Add(valorNuevo);
+            
+        }
+
+
+
         private void materialButton4_Click(object sender, EventArgs e)
         {
             int valor = int.Parse(txtNumero.Text);

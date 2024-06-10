@@ -78,5 +78,23 @@ namespace ClasesINA.Formularios
 
             listas.Show();
         }
+
+        private void facturarConListasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Contenedor.Controls.Clear(); //quitamos forms si ya los hay
+
+            // creamos una instancia del formulario a abrir
+            Principal3 Facturar = new Principal3();
+
+            // indicamos que no es el principal (sino que es secundario)
+            Facturar.TopLevel = false;
+            Facturar.AutoScroll = true; // permite hacer scroll
+            Facturar.FormBorderStyle = FormBorderStyle.None;
+            //NewCuenta.Dock = DockStyle.Fill;
+
+            Contenedor.Controls.Add(Facturar);
+
+            Facturar.Show();
+        }
     }
 }
